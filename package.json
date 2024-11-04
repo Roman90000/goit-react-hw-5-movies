@@ -4,13 +4,22 @@
   "private": true,
   "homepage": "https://Roman90000/goit-react-hw-5-movies/",
   "dependencies": {
+    "@csstools/normalize.css": "^12.1.1",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.7",
+    "bootstrap": "^5.3.3",
+    "normalize.css": "^8.0.1",
+    "notiflix": "^3.2.7",
+    "postcss-normalize": "^13.0.1",
     "react": "^18.1.0",
+    "react-bootstrap": "^2.10.5",
     "react-dom": "^18.1.0",
+    "react-hover": "^3.0.1",
     "react-router-dom": "^6.26.2",
     "react-scripts": "5.0.1",
+    "styled-components": "^6.1.13",
     "web-vitals": "^2.1.3"
   },
   "scripts": {
