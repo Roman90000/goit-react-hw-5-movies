@@ -23,7 +23,7 @@ const Home = () => {
       <ul className="list-group w-25 mb-4">
         {films.map(film => (
           <MovieLink
-            to={`${film.id}`}
+            to={`/movies/${film.id}`}
             poster_path={film.poster_path}
             key={film.id}
             className="link-primary d-inline-flex  py-1 px-2 text-decoration-none border rounded-2 mb-2 text-black"
