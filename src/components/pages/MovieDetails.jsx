@@ -13,9 +13,9 @@ const MovieDetails = () => {
       setFilmId(movie);
     };
     getFilm();
-  }, []);
+  }, [filmId]);
 
-  return <div>getFindByIdMovie</div>;
+  return <div>getFindByIdMovie$`{filmId}`</div>;
 };
 
 export default MovieDetails;
