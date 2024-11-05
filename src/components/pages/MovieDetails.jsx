@@ -13,7 +13,7 @@ const MovieDetails = () => {
       setFilmId(movie);
     };
     getFilm();
-  }, [filmId]);
+  }, [movieId]);
 
   return <div>getFindByIdMovie$`{filmId}`</div>;
 };
