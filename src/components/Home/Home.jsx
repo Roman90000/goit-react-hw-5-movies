@@ -1,9 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getTrending } from 'services/moviesApi';
-// import { Link } from 'react-router-dom';
 import { MovieLink } from './Home.styled';
-// import React from 'react';
-// import Movies from './Movies';
 
 const Home = () => {
   const [films, setFilms] = useState([]);

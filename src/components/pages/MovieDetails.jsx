@@ -1,12 +1,21 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { getFindByIdMovie } from 'services/moviesApi';
 
 const MovieDetails = () => {
-  const { movieId } = useParams();
-  console.log(movieId);
-  useEffect(() => {}, []);
+  const [filmId, setFilmId] = useState([]);
 
-  return <div>MovieDetails</div>;
+  const { movieId } = useParams();
+
+  useEffect(() => {
+    const getFilm = async () => {
+      const movie = await getFindByIdMovie(movieId);
+      setFilmId(movie);
+    };
+    getFilm();
+  }, []);
+
+  return <div>getFindByIdMovie</div>;
 };
 
 export default MovieDetails;
